@@ -15,6 +15,6 @@ def top_tweets_days(data):
 
     result = sorted(days.items(), key=lambda item: item[1], reverse=True)
 
-    print('--------Top 10 Users With Most Tweets--------')
+    print('--------Top 10 Days With Most Tweets--------')
     for i in range(0, 9):
         print("Date: ", result[i][0], "Tweet Count: ", result[i][1]) 
