@@ -8,7 +8,6 @@ def top_hashtags(data):
 
     for tweet in data:
 
-        
         tweet_hashtags = re.findall(r"#(\w+)", tweet['renderedContent'])
 
         for hashtag in tweet_hashtags:
@@ -20,6 +19,6 @@ def top_hashtags(data):
 
     result = sorted(hashtags.items(), key=lambda item: item[1], reverse=True)
 
-    print('--------Top 10 Users With Most Tweets--------')
+    print('--------Top 10 Hashtags With Most Tweets--------')
     for i in range(0, 9):
         print("Hashtag: ", result[i][0], "Tweet Count: ", result[i][1]) 
