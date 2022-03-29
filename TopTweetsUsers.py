@@ -1,7 +1,4 @@
 
-import re
-
-
 def top_tweets_users(data):
 
 
